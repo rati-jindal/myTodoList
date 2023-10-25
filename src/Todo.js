@@ -5,17 +5,25 @@ function Todo() {
     const[listData, setlistData]= useState([]);
 
 
-    function addActivity(){
-        // setlistData([...listData,activity])
-        // console.log(listData)
-
-        setlistData((listData)=>{
-            const updateList = [...listData,activity]
-            console.log(updateList)
+    function addActivity() {
+        if (activity.trim() !== '') {
+          setlistData((listData) => {
+            const updatedList = [...listData, activity];
+            console.log(updatedList);
             setActivity('');
-            return updateList
-        })
-    }
+            return updatedList;
+          });
+        }
+      }
+    // function addActivity(){
+
+    //     setlistData((listData)=>{
+    //         const updateList = [...listData,activity]
+    //         console.log(updateList)
+    //         setActivity('');
+    //         return updateList
+    //     })
+    // }
 
     function removeActivity(i){
         const updatedListData = listData.filter((elem, id)=>{
