@@ -17,8 +17,8 @@ function Todo() {
         })
     }
 
-    function removeActivity(){
-        const updatedListData = listData.filter((i, id)=>{
+    function removeActivity(i){
+        const updatedListData = listData.filter((elem, id)=>{
             return i!==id;
         })
         setlistData(updatedListData);
@@ -42,7 +42,7 @@ function Todo() {
                                 {data}
                             </div>
                             <div className='btn-postion'>
-                            <button onClick={removeActivity}>Remove Task</button>
+                            <button onClick={()=>removeActivity(i)}>Remove Task</button>
                             </div>
 
                         </p>
