@@ -1,27 +1,41 @@
 body {
-  background-color: #AEDEFC
+  background-color: #65451F 
+  
+
 }
 
 .container {
-  background-color: #FFDFDF;
+  background-color: #C8AE7D;
   justify-content: center;
   width: 50%;
-  margin-left: 25%;
+  margin-left: 23%;
   margin-top: 5%; 
   text-align: center;
   padding: 25px;
   border-radius: 25px;
+  
+}
+
+.main-content{
+  background-color: #FFF2D8;
+  margin:auto;
+  padding: 25px;
+  border-radius: 25px;
+  border-style: groove;
+  border: #765827;
+
 
 }
 
 .header {
   width: 95%;
   /* background-color: #070a00; */
-  padding: 1px 20px;
-  color: rgb(8, 8, 8);
+  /* padding: 1px 20px; */
+  color: rgb(14, 14, 14);
   border-radius: 10px;
-  margin: auto;
-  
+  margin-bottom: 60px;
+  font-size : 30px;
+  font-weight: bold;
 }
 
 input[type=text],
@@ -30,50 +44,58 @@ select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #FFF6F6;
-  border-radius: 10px;
+  border: 2px solid #121111;
+  /* border-radius: 10px; */
+  
   box-sizing: border-box;
+  font-weight: bold;
+
 }
 
-input[type=password],
-select {
-  width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #FFF6F6;
-  border-radius: 15px;
-  box-sizing: border-box;
-}
+/* .list-Heading{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold
 
-input[type=email],
-select {
-  width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #FFF6F6;
-  border-radius: 15px;
-  box-sizing: border-box;
-}
-
+} */
 button {
   width: 20%;
-  background-color: #F875AA;
-  color: rgb(15, 15, 15);
+  background-color: #65451F;
+  color: rgb(252, 249, 249);
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
-  border-radius: 15px;
+  /* border: 2px solid black; */
+  font-weight : bold;
+
+
+  /* border-radius: 10px; */
   cursor: pointer;
   
 }
 
 button:hover {
-  background-color: #AEDEFC;
+  background-color: #4F200D;
+  color: rgb(250, 248, 248);
 }
 
+.btn-postion{
+  position: relative;
+  left: 40%;
+  top: -54px;
+}
 
+.listdata{
+  width: 76%;
+  background-color: #65451F;
+  color: rgb(250, 248, 248);
+  padding: 10px;
+  border: 2px solid #121111;
+
+  /* border-radius: 5px; */
+  text-align:left;
+  font-size: 16px;
+  font-weight: bold
+}
 
 .ui-define {
   background-color: rgb(243, 240, 243);
